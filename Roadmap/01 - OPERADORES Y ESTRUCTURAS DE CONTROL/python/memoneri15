@@ -88,3 +88,17 @@ while i <= 10:
   i += 1
 
 # Manejo de excepciones
+try:
+  print(10 / 0)
+except:
+  print("Se ha producido un error")
+finally:
+  print("Ha finalizado el manejo de excepciones")
+
+"""
+Extra
+"""
+
+for number in range(10, 56):
+  if number % 2 = 0 and number != 16 and number % 3 !=0:
+    print(number)
