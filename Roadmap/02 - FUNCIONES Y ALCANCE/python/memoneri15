@@ -48,4 +48,3 @@ def default_arg_greet(name="Python"):
 
 default_arg_greet("Brais")
 default_arg_greet()
-
