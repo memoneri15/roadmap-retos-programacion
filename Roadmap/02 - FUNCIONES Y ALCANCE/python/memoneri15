@@ -1,0 +1,51 @@
+"""
+Funciones definidas por el usuario
+"""
+
+# Simple
+
+
+def greet():
+  print("Hola Python")
+
+
+greet ()
+
+# Con retorno
+
+
+def return_greet():
+  return "Hola, Python"
+
+
+print(return_greet())
+
+# Con un argumento
+
+
+def arg_greet(name):
+  print(f"Hola, {name}!")
+
+
+arg_greet("Brais")
+
+# Con un argumentos
+
+
+def args_greet(greet, name):
+  print(f"{greet}, {name}!")
+
+
+args_greet("Hi", "Brais")
+args_greet(name="Brais", greet="hi")
+
+# Con un argumento predeterminado
+
+
+def default_arg_greet(name="Python"):
+  print(f"Hola, {name}!")
+
+
+default_arg_greet("Brais")
+default_arg_greet()
+
