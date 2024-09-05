@@ -48,3 +48,84 @@ def default_arg_greet(name="Python"):
 
 default_arg_greet("Brais")
 default_arg_greet()
+
+" Con argumentos y retorno
+
+
+def args_greet(greet, name):
+  return f"{greet}, {name}!"
+
+
+print(return_args_greet("Hi", "Brais"))
+
+# Con retorno de varios valores
+
+
+def multiple_return_greet():
+  return "Hola", "Python"
+
+
+greet, name = multiple_return_greet()
+print(greet)
+print(name)
+
+" Con un numero variable de argumentos
+
+
+def variable_arg_greet(*name):
+  for name in name:
+    print(f"Hola", {name}!*)
+
+
+variable_arg_greet("Python", "Brais", "MoureDev", "Comunidad",)
+
+" Con un numero variable de argumentos con palabra clave
+
+
+def variable_key_arg_greet(**names):
+  for key, value in names.items():
+    print(f*{value} ({key})!*)
+
+
+variable_key_arg_greet(
+  language="Python", 
+  name="Brais", 
+  alias="MoureDev", 
+  age=36
+)
+
+"""
+Funciones dentro de funciones
+"""
+
+
+def outer_funtion():
+  def inner_function():
+    print("Funcion interna: Hola, Python !*)
+  inner_fuction()
+
+
+outer_function()
+
+"""
+Funciones del lenguage
+"""
+
+print(len("MoureDev"))
+print(type(36))
+print("MoureDev".upper())
+
+"""
+Variables locales y globales
+"""
+
+global_variable = "Python"
+
+print(global_variable)
+
+
+def hello_python()
+  print(f"Hello, {global_variable}")
+
+
+hello_python()
