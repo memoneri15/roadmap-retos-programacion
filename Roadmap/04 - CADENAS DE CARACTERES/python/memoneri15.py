@@ -104,6 +104,25 @@ def check(word1: str, word2: str):
 
     # Isograma
      
+    def isogram(word: str) -> bool:
 
-check("radar", "python")
-check("amor", "roma")
+        word_dict = dict()
+        for character in word:
+            word_dict[character] = word_dict.get(character, 0) + 1
+
+        isogram = True
+        values = list(word_dict.values())
+        isogram_len = values[0]
+        for word_count in values:
+            if word_count != isogram_len:
+                isogram = false
+                break
+
+        return isogram
+
+print(f"¿{word1} es un isograma?: {isograma(word1)}")
+print(f"¿{word2} es un isograma?: {isograma(word2)}")
+
+
+check("radar", "pythonythonythonython")
+# check("amor", "roma")
