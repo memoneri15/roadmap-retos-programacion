@@ -64,11 +64,36 @@ def web_navigation():
         elif action == "adelante":
             pass
         elif action == "atras":
-            pass
+            if len(stack) > 0:
+            stack.pop()
         else:   
             stack.append(action)
 
-        print(f"Has navegado a la web: {stack[len(stack) - 1]}")
+        if len(stack) > 0:
+            print(f"Has navegado a la web: {stack[len(stack) - 1]}.")
+        else:
+            print("Estas en la pagina de inicio.")
+
+        
+  # web_navigation()
+
+def shared_printed():
+
+    queue = []
+
+    while True:
+
+        action = input("Añade un documento o selecciona imprimir/salir: ")
+
+        if action == "salir":
+            break
+        elif action == "imprimir":
+            if len(queue) > 0:
+                print(f"Imprimiendo: {queue.pop(0)}")
+        else:
+            queue.append(action)
+
+        print(f"Cola de impresion: {queue}")
 
 
-  web_navigation()
+shared_printed()
