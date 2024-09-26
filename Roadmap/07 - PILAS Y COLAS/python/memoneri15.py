@@ -75,7 +75,7 @@ def web_navigation():
             print("Estas en la pagina de inicio.")
 
         
-  # web_navigation()
+web_navigation()
 
 def shared_printed():
 
