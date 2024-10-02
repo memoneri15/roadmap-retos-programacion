@@ -69,4 +69,38 @@ print(my_stack.count())
 
 # FIFO
 
+
 class Queue:
+    
+    def __init__ (self):
+        self.queue = []
+
+    def equeue(self, item):
+        self.queue.append(item)
+
+    def deequeue(self):
+        if self.count() == 0:
+            return None
+        return self.queue.pop(0)
+        
+    def count:(self):
+        return len(self.stack)
+            
+    def print:(self):
+        for item in (self.stack):
+            print(item)
+
+
+my_queue = Queue()
+my_queue.equeue("A")
+my_queue.equeue("B")
+my_queue.equeue("C")
+print(my_queue.count())
+my_queue.print()
+my_queue.deequeue()
+print(my_queue.count())
+print(my_queue.deequeue())
+print(my_queue.deequeue())
+print(my_queue.deequeue())
+print(my_queue.deequeue())
+print(my_queue.count())
